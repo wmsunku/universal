@@ -1,0 +1,23 @@
+<resources>
+
+    <style name="AppTheme" parent="AppThemeBase">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/color_e</item>
+        <item name="colorPrimaryDark">@color/color_e</item>
+    </style>
+
+    <style name="ThemeMain" parent="ThemeBase">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="colorPrimary">@color/color_e</item>
+        <item name="colorPrimaryDark">@color/color_e</item>
+    </style>
+
+    <style name="ThemeSplash" parent="ThemeMain">
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowBackground">@mipmap/ic_music_default_bg</item>
+    </style>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+</resources>

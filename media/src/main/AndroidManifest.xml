@@ -1,0 +1,26 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.wms.media">
+
+    <application>
+
+        <activity
+            android:name="com.wms.media.music.ui.activity.MusicActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/TranslucentTheme">
+
+        </activity>
+
+        <activity
+            android:name="com.wms.media.video.ui.activity.MovieActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/TranslucentTheme">
+
+        </activity>
+
+        <service android:name="com.wms.media.service.MusicService" />
+
+    </application>
+
+
+</manifest>

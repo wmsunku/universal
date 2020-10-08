@@ -1,0 +1,23 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.wms.bookreader" >
+
+
+    <application>
+
+        <activity
+            android:name="com.wms.bookreader.reader.ui.activity.ReaderActivity"
+            android:theme="@style/TranslucentTheme"
+            android:screenOrientation="portrait">
+
+        </activity>
+
+
+        <activity android:name="com.wms.bookreader.reader.ui.activity.BookDetailActivity"
+            android:theme="@style/TranslucentTheme"
+            android:screenOrientation="portrait" >
+
+        </activity>
+    </application>
+
+
+</manifest>

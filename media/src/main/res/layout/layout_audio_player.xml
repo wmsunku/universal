@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"  >
+
+    <RelativeLayout
+        android:id="@+id/viewControl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:layout_constraintTop_toBottomOf="@id/viewProgress">
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/ivMode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/play_mode_level_list" />
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/ivPrev"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/ivPlay"
+            android:src="@drawable/play_btn_prev_selector" />
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/ivPlay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/play_btn_play_pause_selector" />
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/ivNext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@id/ivPlay"
+            android:src="@drawable/play_btn_next_selector" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/viewProgress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/viewControl"
+
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tvCurrentTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/play_time_start"
+            android:textColor="@color/white"
+            android:textSize="10sp" />
+
+        <SeekBar
+            android:id="@+id/sbProgress"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:maxHeight="2dp"
+            android:minHeight="2dp"
+            android:progressDrawable="@drawable/seek_bar_progress_style"
+            android:thumb="@drawable/seek_thumb" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tvTotalTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/play_time_start"
+            android:textColor="@color/white_50p"
+            android:textSize="10sp" />
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
